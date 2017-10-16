@@ -1,7 +1,7 @@
 <div class="wrapper">
   <div class="header row">
     <form class="col" (submit)="calculatePower()" name="formData">
-      <h2> Initial power level:   <input type="number" name="power" [(ngModel)]="user.power" #power='ngModel' min="0" max="100" value="1">
+      <h2> Initial power level:   <input type="number" name="val" [(ngModel)]="val" #power='ngModel' min="0" max="100" value="1">
            <button type="submit" class="btn btn-primary btn-lg">Calculate Powers</button>
           </h2>
 

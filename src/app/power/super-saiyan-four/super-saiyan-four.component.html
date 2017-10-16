@@ -1,5 +1,7 @@
 <div class="col panel panel-defaul">
   <div class="panel-heading">SuperSaiyanFour</div>
   <div class="panel-body"> Power Level:{{ myVal*500 |json }}</div>
-
+  <h4 *ngIf="myVal*500 > 9000 && myVal*500 <= 20000">Over 9000!</h4>
+  <h4 *ngIf="myVal*500 > 20000 && myVal*500 < 50000">Superlative!</h4>
+  <h2 *ngIf="myVal*500 >= 50000">The One!</h2>
 </div>

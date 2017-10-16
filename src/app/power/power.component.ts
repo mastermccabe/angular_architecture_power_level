@@ -6,17 +6,16 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
   styleUrls: ['./power.component.css']
 })
 export class PowerComponent implements OnInit {
-  user = {
-    power:''
-  }
-  val = '1';
+
+  val :number;
   calculatePower(){
-    console.log("powerlevel", this.user.power);
-    this.val = this.user.power;
+    console.log("powerlevel", this.val);
+
   }
   constructor() { }
 
   ngOnInit() {
+    this.val = 1;
   }
 
 }
