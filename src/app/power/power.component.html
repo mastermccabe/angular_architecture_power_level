@@ -1,0 +1,23 @@
+<div class="wrapper">
+  <div class="header row">
+    <form class="col" (submit)="calculatePower()" name="formData">
+      <h2> Initial power level:   <input type="number" name="power" [(ngModel)]="user.power" #power='ngModel' min="0" max="100" value="1">
+           <button type="submit" class="btn btn-primary btn-lg">Calculate Powers</button>
+          </h2>
+
+    </form>
+    <img src="https://static.giantbomb.com/uploads/original/0/31/11738-ssj_goku.jpg" class="img-rounded" width="200" height="200">
+  </div>
+  <div class="main container">
+    <div class="row panel-group">
+      <app-human [myVal]="val"></app-human>
+      <app-saiyan [myVal]="val"></app-saiyan>
+      <app-super-saiyan [myVal]="val"></app-super-saiyan>
+    </div>
+    <div class="row panel-group">
+      <app-super-saiyan-two [myVal]="val"></app-super-saiyan-two>
+      <app-super-saiyan-three [myVal]="val"></app-super-saiyan-three>
+      <app-super-saiyan-four [myVal]="val"></app-super-saiyan-four>
+    </div>
+  </div>
+</div>
